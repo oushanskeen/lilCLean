@@ -13,7 +13,7 @@ describe('#sayHelloWorld', () => {
     expect(response).toBe('Bonjour monde !');
   });
 });
-
+/*
 describe('#sayHelloPerson', () => {
     test('should resolves', async () => {
     // given
@@ -25,4 +25,4 @@ describe('#sayHelloPerson', () => {
     expect(response).toBe('Buongiorno John !');
   });
 });
-
+*/

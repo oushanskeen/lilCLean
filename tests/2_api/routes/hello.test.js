@@ -10,6 +10,7 @@ it('Async test for /hello route', async done => {
   expect(response.body.message).toBe('Hello world!');
   done()
 })
+/*
 it('Async test /hello/:name route', async done => {
   // Do your async tests here
   const response = await request.get('/hello/John');
@@ -18,7 +19,7 @@ it('Async test /hello/:name route', async done => {
   expect(response.body.message).toBe('Hello John!');
   done()
 })
-
+*/
 // This test fails because 1 !== 2
 //it('Testing to see if Jest works', () => {
 //  expect(1).toBe(1)
