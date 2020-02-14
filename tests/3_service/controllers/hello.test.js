@@ -1,6 +1,5 @@
 const sayHello = require('../../../lib/4_core/interactors/sayHello');
 const helloController = require('../../../lib/3_service/controllers/hello');
-
 jest.mock('../../../lib/4_core/interactors/sayHello');
 
 describe('#sayHelloWorld', () => {
@@ -9,8 +8,10 @@ describe('#sayHelloWorld', () => {
     sayHello.mockImplementationOnce(() => 'Bonjour monde !');
     // when
     const response = await helloController.sayHelloWorld();
+    //const response = helloController.sayHelloWorld();
     // then
-    expect(response).toBe('Bonjour monde !');
+    //expect(response).toBe({message:{'Bonjour monde !'});
+    expect(response).toEqual({message:'Bonjour monde !'});
   });
 });
 /*
