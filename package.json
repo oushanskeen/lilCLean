@@ -1,12 +1,13 @@
 {
-  "name": "todoapi",
+  "name": "beender-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "twatch": "jest --watchAll",
-    "start": "nodemon server.js"
+    "demonstart": "nodemon server.js",
+    "start":"node lib/1_host/server.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +17,7 @@
     "supertest": "^4.0.2"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1"
   }
 }
